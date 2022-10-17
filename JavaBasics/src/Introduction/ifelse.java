@@ -18,13 +18,13 @@ public class ifelse {
         }
         else
         {
-        	if(N>2 && N <5) {
+        	if(N>=2 && N <=5) {
         		System.out.println("Not Weird");
         	}
-        	if(N>6 && N<20) {
+        	if(N>=6 && N<=20) {
         		System.out.println("Weird");
         	}
-        	else
+        	if(N >20)
         	{
         		System.out.println("Not Weird");
         	}
