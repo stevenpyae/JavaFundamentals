@@ -21,8 +21,9 @@ public class javaloopstwo {
                 {
                 	ans = (int) (ans + Math.pow(2, k) * b);
                 }
-                System.out.print(ans);
+                System.out.printf("%d ", ans);
             }
+            System.out.print("\n");
         }
         
         in.close();
