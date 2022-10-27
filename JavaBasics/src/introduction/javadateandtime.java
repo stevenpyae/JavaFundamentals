@@ -26,12 +26,13 @@ class Result {
 
     public static String findDay(int month, int day, int year) {
     	Calendar cal = Calendar.getInstance();
-    	cal.set(year, month, day);
-    	//int dayofweek = cal.get(Calendar.DAY_OF_WEEK);
+    	cal.set(year, month-1, day);
+    	
+    	//System.out.println(new SimpleDateFormat("MMMM YYYY").format(cal.getTime()));
     	
     	SimpleDateFormat sdf = new SimpleDateFormat("EEEE");
-    	String dow = sdf.format(cal);
-    	return dow;
+    	String dayofweek = sdf.format(cal.getTime());
+    	return dayofweek.toUpperCase();
     }
 
 }
