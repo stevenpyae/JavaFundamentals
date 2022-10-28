@@ -12,7 +12,7 @@ public class stringtokens {
 		if (s.length() == 0) {
 			System.out.println("0");
 		} else {
-			String[] sarr = s.split("[ !,?._'@]+");
+			String[] sarr = s.split("[ !,?._'@]+"); // Regex to split the string 
 
 			System.out.println(sarr.length);
 			for (String str : sarr) {

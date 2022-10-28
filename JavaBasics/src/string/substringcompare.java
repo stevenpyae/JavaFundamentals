@@ -10,9 +10,7 @@ public class substringcompare {
         String largest = "";
         
         SortedSet<String> ts = new TreeSet<String>();
-        // Complete the function
-        // 'smallest' must be the lexicographically smallest substring of length 'k'
-        // 'largest' must be the lexicographically largest substring of length 'k'
+
         for(int i =0; i<=s.length()-k;i++)
         {
         	ts.add(s.substring(i,i+k));
