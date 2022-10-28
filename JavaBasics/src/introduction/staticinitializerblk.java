@@ -2,6 +2,7 @@ package introduction;
 
 import java.util.Scanner;
 
+@SuppressWarnings("resource")
 public class staticinitializerblk {
 
 	public static int breadth;
@@ -16,7 +17,8 @@ public class staticinitializerblk {
 			if(breadth<=0||height<=0)
 			{
 				flag = false;
-				throw new Exception("Breadth and height must be positive");
+				var exception = new Exception("Breadth and height must be positive");
+				throw exception;
 			}
 		}
 		catch(Exception e)
