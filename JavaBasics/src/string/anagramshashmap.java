@@ -15,6 +15,7 @@ public class anagramshashmap {
 		if (a.length() != b.length()) {
 			return false;
 		}
+		
 		for (int i = 0; i < a.length(); i++) {
 			if (hsmap.containsKey(a.charAt(i))) {
 				Integer frequency = hsmap.get(a.charAt(i));
@@ -24,6 +25,7 @@ public class anagramshashmap {
 				hsmap.put(a.charAt(i), 1);
 			}
 		}
+		
 		for (int i = 0; i < b.length(); i++) {
 			if (hsmap1.containsKey(b.charAt(i))) {
 				Integer frequency = hsmap1.get(b.charAt(i));
