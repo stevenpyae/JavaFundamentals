@@ -14,22 +14,19 @@ public class stringreversepalindrome {
         /*Loop through until half of the strings */
         for(int i = 0; i < A.length()/2; i++)
         {
-        	//System.out.println(A.charAt(lastindex));
+        	//If current character not equals to the corresponding character from the back
         	if(A.charAt(i) != A.charAt(lastindex))
         	{
+        		//put flag to false, and say it is not palindrome.
         		flag = false;
         	}
         	lastindex--;
         }
         
-        if (flag)
-        {
-        	System.out.println("Yes");
-        }
-        else
-        {
-        	System.out.println("No");
-        }
+        //tenary  if else expression 
+        String s = ((flag) ? "Yes" : "No");
+        System.out.println(s);
+        
 	}
 
 }
