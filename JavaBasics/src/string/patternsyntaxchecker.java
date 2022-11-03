@@ -14,10 +14,12 @@ public class patternsyntaxchecker {
 			String pattern = in.nextLine();
           	//Write your code
 			try {
+				// If can compile, print out valid, if not catch the exception
 				Pattern.compile(pattern);
 				System.out.println("Valid");
 			}
 			catch(PatternSyntaxException e) {
+				// Print out Invalid when you catch the exception
 				System.out.println("Invalid");
 			}
 			testCases--;
